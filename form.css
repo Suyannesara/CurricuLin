@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+header{
+  height: 100%;
+  margin: 65px 90px 0 90px;
+}
+
+
+nav #logo{
+  width: 60px;
+}
+
+.landing{
+  display: flex;
+  margin-top: 40px;
+  height: 70%;
+
+  background-size: 110%;
+  background-image: url(/Curriculin/CurricuLin\ \(2\).svg);
+  background-repeat: no-repeat;
+  background-position-x: -40px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing .text h2{
+  color: #0077B7;
+  font-family: 'poppins', sans-serif;
+
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.landing .text p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.landing .button{
+  display: flex;
+  width: 50%;
+
+  justify-content: center;
+}
+
+.landing .button a button, #btnenvio{
+  width: 300px;
+  height: 70px;
+
+  background-color: #0077B7;
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+
+  font-size: 16px;
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.landing .button button:hover{
+  background-color: #F9F9F9;
+  color: #0077B7;
+  border: solid 0.5px #0077B7;
+
+  transition: 700ms;
+}
+
+section{
+  margin: 65px 90px 0 90px;
+
+  background-color: #F9F9F9;
+  border-radius: 20px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+form{
+  margin: 5%;
+}
+
+form p{
+  color: #cfcfcf;
+  text-justify: right;
+  align-self: flex-end;
+}
+
+form fieldset{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+
+  border: none;
+}
+
+fieldset legend{
+  width: 90%;
+  margin: 18px;
+
+  padding: 10px;
+  border-radius: 2px;
+
+  color: white;
+  background-color: #cfcfcf;
+}
+
+fieldset label{
+  margin: 1% 3%;
+}
+
+label input, select, textarea{
+  width: 26em;
+  margin-top: 5px;
+  padding: 10px;
+
+  border: solid 2px #cfcfcf;
+  border-radius: 4px;
+}
+
+label input, select, textarea:focus{
+  outline: 0;
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+
+  background-color: #0077B7;
+
+  bottom: -80;
+}
+
+select{
+  width: 28em;
+}
+
+.envio{
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.confirmacao{
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+}
+
+.confirmacao input{
+  align-self: center;
+}
+
+#btnenvio{
+  margin-top: 40px;
+}
+
+#btnenvio:hover{
+  background-color: #F9F9F9;
+  color: #0077B7;
+  border: solid 0.5px #0077B7;
+
+  transition: 700ms;
+}
+
+/*TABLET/MOBILE*/
+@media screen and (max-width:850px) {
+  .landing{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .landing .button {
+    margin-left: 55px;
+  }
+
+  header{
+    margin: 65px 11%;
+  }
+
+  section{
+    margin: 0;
+  }
+
+  fieldset{
+    display:flex;
+    justify-content: center;
+  }
+  
+}
